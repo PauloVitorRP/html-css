@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Love';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;}
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        background-color: rgb(122, 241, 174);
+        margin: 0;
+    }
+    
+    header{
+        background-image: linear-gradient(to top ,  #01040293 , #35b770d8 );
+        text-align: center;
+        color: white;    
+        min-height: 150px;
+        margin: auto;
+    }
+
+    h1{
+        padding: 1%;
+        margin: 0;
+        
+        
+        
+            }
+    header p {
+            padding: 0;
+            margin: auto;
+            max-width: 600px;
+            font-size: 1.2em;
+          
+    }
+
+    nav{
+        
+    }
+   
+
+    nav a{
+        color: white;
+        font-size: 1em;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        float: left;
+        padding: 1% 1%;
+        margin: 0% 1%;
+    }
+    nav a:hover {background-color: #35b7705d ;
+                 border-radius: 5px;}
+
+    section main{ 
+                  margin: auto;
+                  display: block;
+                  min-width: 300px;
+                    max-width: 1000px;
+                  background-color: white;
+                  box-shadow: 0px 0px 10px 2px #00000085;
+                  border-radius: 0px 0px 20px 20px;
+    }
+    section main article{
+                         margin: auto;
+                         min-width: 300px;
+                         max-width: 1000px;
+                         display: block; 
+                         padding: 2% 0%;            
+    }
+
+    
+    h2{
+        font-family:'love', serif;
+        font-size: 1.05em;
+        color: #0b522d;
+        padding: 1%;   
+        
+    }
+    .h2-center {
+        text-align: center!important;
+        font-size: 1.3em!important;
+    }
+    h2.sombra-verde{
+        background-image: linear-gradient(to right ,  #35b77080 , #afe2c63d );
+
+    }
+
+    .paragrafos{
+        margin: 0;
+        padding: 4% 1%;
+        text-indent: 30px;
+
+    }   
+
+   a {
+        font-weight: bold;
+        color: #0b522d;
+        font-style: none;
+        text-decoration: none
+    }
+
+    a:hover{
+        background-color:rgba(58, 218, 135, 0.5) ;
+        padding: 1% 1%;
+        border-radius: 5px; 
+    }
+
+    
+
+    article span{
+                font-weight: bold;      
+                color: #0b522d;
+    }
+    img {
+        margin: auto;
+        display: block;
+    }
+
+    #video{
+                width: 100%;
+                padding: 2% 0%;
+                background-color: green;
+    }
+
+    iframe{
+        margin: auto;
+        display: block;
+    }
+    
+    .bg-verde{
+        background-color:#b3eca5;
+        border-radius: 20px 20px;
+        
+    }
+    article h3{
+        color: white;
+        background-color:#19a95ee6 ;
+        margin: 0;
+        border-radius: 7px 7px 0px 0px;
+        padding: 1%;
+    } 
+
+ #lista{
+    min-width: 300px;
+    max-width: 1000px;
+ }
+    ul{
+        
+        display: block;
+        
+        list-style-type: '\2714\00A0\00A0';
+        columns: 2;
+    }
+
+    .espaco-footer{
+        padding-bottom: 2%;
+    }
+ 
+    footer {
+        background-color:#0f703e5b ;           
+        width: 100%;    
+        padding: 2% 0%;
+        height: 2em;
+
+    }
+
+    footer p{
+        text-align: center;
+        margin: 0px;
+        
+    }
+    /*
+    @media (min-width:601px ) {
+        header {
+            height: 11em;
+        }
+        header  p{
+            text-align: center;
+        }
+
+        header nav ul{display: inline-block;
+                    width: 100%
+
+        }
+
+        p {text-align: justify;}
+
+
+    }
+    */
+   
+    @media (max-width:600px) {
+
+     header h1{ 
+                padding: 1% 0%;
+
+      }
+      header nav {
+                padding: 2% 0%;
+
+      }
+        main {
+                width: 95%!important;
+        }
+        main article{
+                width: 100% !important;
+        }
+
+        main article h2{
+                        text-align: center !important;
+                        font-size: 1.3em;
+                        margin
+        }
+        div h3{
+            text-align: center;
+        }
+
+        div ul {
+            columns: 1;
+            margin:auto;
+            display: block;
+            text-align: center;
+        }
+        #video{ 
+                width: 100%;
+                padding: 2% 0%;
+                background-color: green;
+                
+        }
+        #video iframe{
+            width: 440px;
+
+        }
+
+
+
+        
+    }
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamicas</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/rapgrinjou.mp3" controls autoplay ></audio>
+    <p>Ou</p>
+    <audio preload="metadata" autoplay controls loop >
+        <source src="midia/rapgrinjou.mp3" type="audio/mpeg">
+        <source src="midia/rapgrinjou.ogg" type="audio/ogg">
+        <source src="midia/rapgrinjou.wav" type="audio/wav">
+        <p>infelsimente o seu navegador não consegue reproduzir audio. <a href="midia/rapgrinjou.mp3"></a>Clique aqui para baixar o arquivo mp3 </p>
+    </audio>
+    <p>infelsimente o seu navegador não consegue reproduzir audio. <a href="midia/rapgrinjou.mp3">Clique aqui para baixar o arquivo --mp3</a> </p>
+    <!--mp3 wav ogg-->
+</body>
+</html>
