@@ -11,11 +11,17 @@
 <body>
     <h1>Exemplo de formulario</h1>
     <form action="cadastro.php" method="get">
+
         <p>
-            <label for="inum">Numero:</label>
-            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
-            <output id="ival">5</output>
+            <label for="iano"> Em que ano voce naceu ?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
         </p>
+
+        <p>
+            <label for="iidade">Sua idade é</label>
+            <output id="iidade">0</output>
+        </p>
+
 
         <p>
 
@@ -24,6 +30,13 @@
         </p>
 
     </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 
 
 </body>
